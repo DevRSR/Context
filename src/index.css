@@ -7,7 +7,83 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  max-width: 700px;
+  height: 100vh;
+  background: rgba(0,245,245,.12);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.header {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ddf;
+}
+
+.list {
+  margin: 25px 0;
+  padding: 20px;
+  background: rgba(0,0,0,.2);
+}
+.empty {
+  color: white;
+  font-family: Segoe UI;
+  margin-bottom: 45px;
+}
+
+.detail {
+  display: inline-block;
+  margin-bottom: 15px;
+  background: #00ffff;
+  padding: 10px;
+  width: calc(100% - 40px);
+  cursor: pointer;
+}
+
+.detail:hover {
+  opacity: .7;
+  text-decoration: line-through;
+}
+.detail .title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.detail .author {
+  font-size: 14px;
+  color: #fff;
+}
+
+form {
+  display: inline-block;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #0ff;
+  margin: 65px 0 15px;
+}
+
+input[type='text'] {
+  width: calc(100% - 40px);
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #111;
+  background: transparent;
+  color: #f4f4f4;
+}
+input[type='submit'] {
+  font-weight: 450;
+  width: calc(100% - 40px);
+  padding: 10px;
+  outline: none;
+  border: none;
+  background: #0ff;
+  color: #f4f4f4;
 }
